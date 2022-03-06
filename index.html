@@ -12,7 +12,50 @@
     <div class="container">
       <header class="pass__header">
         <h3 class="heading">Password Generator</h3>
+        <div class="password">
+          <span id="pw">Password</span>
+
+          <button id="copy">
+            <ion-icon name="clipboard-outline"> </ion-icon>
+          </button>
+        </div>
       </header>
+      <main class="pass__body">
+        <div class="form">
+          <label for="size">Password Length</label>
+          <input id="size" type="number" value="20" min="4" max="20" />
+        </div>
+
+        <div class="form">
+          <label for="upper-case">Include Uppercase Letters</label>
+          <input id="upper-case" type="checkbox" />
+        </div>
+
+        <div class="form">
+          <label for="lower-case">Include Lowercase Letters</label>
+          <input id="lower-case" type="checkbox" />
+        </div>
+
+        <div class="form">
+          <label for="numbers">Include Numbers</label>
+          <input id="numbers" type="checkbox" />
+        </div>
+
+        <div class="form">
+          <label for="symbols">Include Symbols</label>
+          <input id="symbols" type="checkbox" />
+        </div>
+
+        <button class="generate">Generate Password</button>
+      </main>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
